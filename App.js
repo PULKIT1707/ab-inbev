@@ -1,32 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
-import {Route, Router, Routes } from 'react-router-dom'
-import Reward from './Components/Reward';
+import HomePage from './Components/HomePage';
 import Login from './Components/Login';
-import Navbar from './Components/Navbar';
+import { BrowserRouter, Switch ,Route, Router, Routes } from 'react-router-dom'
 
 function App() {
   return (
-    <>
-    <Router>
-    {/* <Routes> */}
-      <Route path='/' component={<Navbar/>}/>
-      <Route exact path='/login' component={<Login/>}/>
-      <Route path='/RewardPage' component={<Reward/>}/>
-      {/* <Navbar/> */}
-    {/* <Menu/>
-    <Banner/> */}
-    {/* <Login /> */}
-    {/* <SignIn/> */}
-    {/* <Reward/>
-    <Work/>
-    <Deals/>
-    <ProductsPanel type="display"/>
-    <ProductsPanel type="fav"/>
-    <Footer/> */}
-    {/* </Routes> */}
-    </Router>
-    </>
+    <div className="App">
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element= {<HomePage />}>
+          </Route>
+          <Route path="/login" element= {<Login />}>
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 
