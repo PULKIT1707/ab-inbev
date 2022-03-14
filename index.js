@@ -20,22 +20,30 @@ import { BrowserRouter } from 'react-router-dom';
 import HomePage from './Components/HomePage';
 
 ReactDOM.render(
-  <BrowserRouter>
   <React.StrictMode>
-    <HomePage/>
-    {/* <Navbar/> */}
-    {/* <Menu/>
-    <Banner/> */}
-    {/* <Login /> */}
-    {/* <SignIn/> */}
-    {/* <Reward/>
-    <Work/>
-    <Deals/>
-    <ProductsPanel type="display"/>
-    <ProductsPanel type="fav"/>
-    <Footer/> */}
-  </React.StrictMode>
-  </BrowserRouter>,
+    <App />
+  </React.StrictMode>,
   document.getElementById('root')
 );
 reportWebVitals();
+
+// ReactDOM.render(
+//   <BrowserRouter>
+//   <React.StrictMode>
+//     <HomePage/>
+//     {/* <Navbar/> */}
+//     {/* <Menu/>
+//     <Banner/> */}
+//     {/* <Login /> */}
+//     {/* <SignIn/> */}
+//     {/* <Reward/>
+//     <Work/>
+//     <Deals/>
+//     <ProductsPanel type="display"/>
+//     <ProductsPanel type="fav"/>
+//     <Footer/> */}
+//   </React.StrictMode>
+//   </BrowserRouter>,
+//   document.getElementById('root')
+// );
+// reportWebVitals();
